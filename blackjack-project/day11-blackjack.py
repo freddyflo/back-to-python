@@ -30,6 +30,10 @@ def get_winner(player_score, dealer_score):
         print(f"Player wins! {player_score}")
     elif ( player_score < dealer_score ) and ( dealer_score <= 21 ):
         print(f"Dealer wins! {dealer_score}")
+    elif player_score > dealer_score:
+        print(f"Dealer wins! {dealer_score}")
+    elif player_score < dealer_score:
+        print(f"Player wins! {player_score}")
     else:
         print(f"It's a tie! {player_score} {dealer_score}")
     return player_score, dealer_score
