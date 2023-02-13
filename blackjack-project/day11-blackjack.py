@@ -70,7 +70,7 @@ def start_game():
                 display_winner()
                 continue_game = False
 
-            if len(player_cards_list) >= 5 or len(dealer_cards_list) >= 5:
+            if get_score(player_cards_list) > 21:
                 display_winner()
                 continue_game = False
         
