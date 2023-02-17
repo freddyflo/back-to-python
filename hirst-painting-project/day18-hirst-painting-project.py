@@ -34,12 +34,13 @@ colors = ["blue", "red", "gold", "green", "black", "gray"]
 DOT_SIZE = 20
 NUMBER_OF_DOTS = 101
 
-
+# Defines starting point
 hirst.setheading(225)
 hirst.forward(300)
 hirst.setheading(0)
+
 hirst.hideturtle()
-    
+
 for dot_count in range(1, NUMBER_OF_DOTS):
     hirst.dot(DOT_SIZE, random.choice(list_of_colors))
     hirst.forward(50)
