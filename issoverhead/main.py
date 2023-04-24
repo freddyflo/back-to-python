@@ -3,6 +3,8 @@ import smtplib
 from datetime import datetime
 import time
 
+# International Space Station (ISS)
+
 MY_LAT = 48.856613 # Your latitude
 MY_LONG = 2.352222 # Your longitude
 EMAIL = ""
