@@ -57,7 +57,7 @@ class FlightSearch:
             data['route'][1]['local_departure'].split('T')[0]
         )
 
-        print(f"{flightData.city_from}: €{flightData.price}")
+        #print(f"{flightData.city_from}: €{flightData.price}")
         return flightData
         pass
     pass

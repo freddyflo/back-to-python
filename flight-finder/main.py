@@ -40,7 +40,7 @@ six_month_from_date = datetime.now() + timedelta(days=(6 * 30))
 
 sheet_data = dataManager.get_destination_information()
 
-CITY_OF_ORIGIN = "FRA"
+CITY_OF_ORIGIN = "PAR"
 
 if sheet_data[0]["iataCode"] == "":
     for data in sheet_data:
@@ -58,6 +58,6 @@ for destination in sheet_data:
     
     if flight is not None and flight.price < destination["lowestPrice"]:
         notificationManager.send_sms(
-            message=f"Low price alert! Only €{flight.price} to fly from {flight.city_from}-{flight.fly_from} to {flight.city_to}-{flight.city_to}, from {flight.out_date} to {flight.return_date}.")
+            message=f"Low price alert! Only €{flight.price} to fly from {flight.city_from}-{flight.fly_from} to {flight.city_to}-{flight.fly_to}, from {flight.out_date} to {flight.return_date}.")
    
 
